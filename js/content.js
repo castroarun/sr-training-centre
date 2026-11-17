@@ -11,7 +11,6 @@ window.SR = {
   contact: {
     name: "SR Training Center",
     addressLines: ["SF.No. 47/1C, Patta No: 109", "Polachery Main Road, Sonallur", "Chengalpattu District, Chennai – 600 127"],   // from SR's board, 17 Nov 2026
-    addressShort: "Polachery Main Road, Sonallur, Chennai – 600 127",   // used in the thin top strip
     gstin: "33ACXFS1407J1ZU",   // from SR's board, 17 Nov 2026
     // Numbers shown on the site (from Arun, 17 Nov 2026). The first one is the main number:
     // the floating Call button and error notes use it.

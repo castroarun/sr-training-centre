@@ -459,3 +459,15 @@ p{margin:0}
 
 /* keep the footer legal line clear of the floating buttons on phones (17 Nov 2026) */
 @media (max-width:700px){.site-footer .legal,footer .legal{padding-right:72px}}
+
+/* top strip address: full text; scrolls slowly when it doesn't fit (17 Nov 2026) */
+.topstrip .ts-addr{flex:1 1 0;min-width:0;overflow:hidden;white-space:nowrap}
+.topstrip .ts-addr.scroll{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+.topstrip .ts-track{display:inline-block}
+.topstrip .ts-addr.scroll .ts-track{animation:tsScroll var(--ts-dur,26s) linear infinite}
+.topstrip .ts-addr.scroll .ts-track span{padding-right:48px}
+.topstrip .ts-addr.scroll:hover .ts-track{animation-play-state:paused}
+@keyframes tsScroll{to{transform:translateX(-50%)}}
+.topstrip .wrap > span:last-child{flex:none}
+@media (max-width:600px){.topstrip .ts-addr{flex-basis:100%}}
+@media (prefers-reduced-motion:reduce){.topstrip .ts-addr{white-space:normal}}

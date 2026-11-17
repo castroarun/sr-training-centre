@@ -41,7 +41,7 @@
   if (header) {
     header.outerHTML = `
     <div class="topstrip"><div class="wrap">
-      <span>${esc(C.addressShort || C.addressLines.join(", "))}</span>
+      <span class="ts-addr"><span class="ts-track">${esc(C.addressLines.join(", "))}</span></span>
       <span>${C.phones.map((p) => `<a href="tel:${p.dial}">${esc(p.display)}</a>`).join(" · ")}<span class="ts-mail"> · <a href="mailto:${C.email}">${esc(C.email)}</a></span></span>
     </div></div>
     <header class="site-header" id="top-header"><div class="wrap">
@@ -71,6 +71,20 @@
       <p class="legal">© <span id="yr"></span> SR Training Center · Registered partnership firm No. 1512 of 2015, Chennai (South) · GSTIN ${esc(C.gstin)}</p>
     </div></footer>`;
     $("#yr").textContent = new Date().getFullYear();
+  }
+
+  /* ---------- top strip: full address, scrolls only when it doesn't fit ---------- */
+  const tsBox = $(".ts-addr"), tsTrack = tsBox && tsBox.firstElementChild;
+  if (tsBox && tsTrack) {
+    const full = tsTrack.textContent;
+    const fit = () => {
+      tsBox.classList.remove("scroll"); tsTrack.textContent = full;
+      if (reduce || tsTrack.scrollWidth <= tsBox.clientWidth + 1) return;
+      tsTrack.innerHTML = `<span>${esc(full)}</span><span aria-hidden="true">${esc(full)}</span>`;
+      tsTrack.style.setProperty("--ts-dur", Math.max(14, Math.round(full.length / 4)) + "s");
+      tsBox.classList.add("scroll");
+    };
+    fit(); let tsT; window.addEventListener("resize", () => { clearTimeout(tsT); tsT = setTimeout(fit, 150); });
   }
 
   /* ---------- floating buttons + pop-ups ---------- */
