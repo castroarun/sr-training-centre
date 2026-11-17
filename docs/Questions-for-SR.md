@@ -1,0 +1,30 @@
+# SR Training Center website: questions for Rajendran sir
+
+Please reply to each point. A short answer is fine. You can also send a WhatsApp voice note.
+
+## A. Please check
+
+1. On the website we put sample countries for now: Singapore, UAE, Saudi Arabia, Qatar, Kuwait, Oman, and "7 countries". Please check and send the correct list.
+2. We wrote a short message in your name on the website. Please read it. Is it okay?
+
+## B. Contact
+
+3. We have put 98849 54330 as the WhatsApp number on the website. Is this correct?
+4. WhatsApp first message: English, Tamil, or both?
+5. Website enquiries will come by email to **srtrainingcenter@gmail.com**. Is this correct? Do you want a second email ID also?
+6. Office timing? (Days and time.)
+
+## C. Content
+
+7. How many candidates have you trained so far? (Approximate is okay.)
+8. Please send 2 or 3 feedback messages from candidates now working abroad. Name, trade, country. Photo if they agree. Voice note is okay.
+9. Please send 2 or 3 feedback messages from companies or agencies who took your workers. Name, company, country.
+
+## D. Manpower supply page (Mr. Ramanan)
+
+10. Is the manpower licence in the name of S.R. Global Consultants? If yes, should this page show "S.R. Global Consultants"? Anywhere else on the website? Please send a clear photo of the licence (number, issued by, valid until).
+11. Which countries do you send workers to?
+
+## E. Decisions
+
+12. The website name srtrainingcenter.in is available now. Can we register it for you? Yes or no.

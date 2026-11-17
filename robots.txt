@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://srtrainingcenter.com/sitemap.xml
