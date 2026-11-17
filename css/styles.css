@@ -456,3 +456,6 @@ p{margin:0}
 /* two phone numbers (17 Nov 2026) */
 #contact-card .ph-who{color:rgba(255,255,255,.72)}
 @media (max-width:600px){.topstrip .ts-mail{display:none}}
+
+/* keep the footer legal line clear of the floating buttons on phones (17 Nov 2026) */
+@media (max-width:700px){.site-footer .legal,footer .legal{padding-right:72px}}

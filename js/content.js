@@ -10,7 +10,9 @@ window.SR = {
   /* ---------- Contact ---------- */
   contact: {
     name: "SR Training Center",
-    addressLines: ["No.2, MLA Salai, Mambakkam", "Chennai – 600 127, Tamil Nadu"],
+    addressLines: ["SF.No. 47/1C, Patta No: 109", "Polachery Main Road, Sonallur", "Chengalpattu District, Chennai – 600 127"],   // from SR's board, 17 Nov 2026
+    addressShort: "Polachery Main Road, Sonallur, Chennai – 600 127",   // used in the thin top strip
+    gstin: "33ACXFS1407J1ZU",   // from SR's board, 17 Nov 2026
     // Numbers shown on the site (from Arun, 17 Nov 2026). The first one is the main number:
     // the floating Call button and error notes use it.
     phones: [
@@ -20,8 +22,8 @@ window.SR = {
     whatsapp: "919884934330",            // Rajendran's number: all WhatsApp buttons open a chat here
     email: "srtrainingcenter@gmail.com",
     hours: "Monday to Saturday, 8:00 am to 7:00 pm",   // hours from SR 16 Nov 2026; days set by Arun 17 Nov 2026
-    mapsLink: "https://www.google.com/maps/search/?api=1&query=MLA+Salai+Mambakkam+Chennai+600127",
-    mapsEmbed: "https://www.google.com/maps?q=MLA+Salai,+Mambakkam,+Chennai+600127&output=embed"
+    mapsLink: "https://www.google.com/maps/search/?api=1&query=Polachery+Main+Road+Sonallur+Chennai+600127",
+    mapsEmbed: "https://www.google.com/maps?q=Polachery+Main+Road,+Sonallur,+Chennai+600127&output=embed"
   },
 
   /* ---------- Ready-typed WhatsApp messages (wording to confirm with SR) ---------- */
@@ -86,7 +88,7 @@ window.SR = {
 
   /* ---------- Gallery (filter groups: construction, mep, center) ---------- */
   gallery: [
-    { photo: "hero-facility-building", caption: "Our workshop, Mambakkam", group: "center" },
+    { photo: "hero-facility-building", caption: "Our workshop, Sonallur", group: "center" },
     { photo: "aluminium-formwork",     caption: "Aluminium formwork bay",  group: "construction" },
     { photo: "pipe-fitting",           caption: "Pipe fitting bay",        group: "mep" },
     { photo: "timber-formwork",        caption: "Timber formwork",         group: "construction" },
@@ -107,7 +109,8 @@ window.SR = {
     ["Firm", "SR Training Center (partnership firm)"],
     ["Registration", "No. 1512 of 2015, Registrar of Firms, Chennai (South)"],
     ["Under", "Indian Partnership Act, 1932"],
-    ["Registered on", "10 August 2015"]
+    ["Registered on", "10 August 2015"],
+    ["GSTIN", "33ACXFS1407J1ZU"]
   ],
 
   /* ---------- Testimonials: ONLY real people, with their permission ----------
@@ -136,7 +139,7 @@ window.SR = {
       { name: "Hospitality & services", text: "Hotel, restaurant and facility staff" }
     ],
     reasons: [
-      { title: "Trained on our own bays", text: "Workers practise and are trade-tested at our Mambakkam workshop before they are put forward." },
+      { title: "Trained on our own bays", text: "Workers practise and are trade-tested at our Sonallur workshop before they are put forward." },
       { title: "Documents handled", text: "Offer letters, visa and emigration paperwork are followed through for you." },
       { title: "Steady supply", text: "We train about 150 candidates every month, so we can put forward trained workers on a regular basis." }
     ],

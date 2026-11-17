@@ -41,7 +41,7 @@
   if (header) {
     header.outerHTML = `
     <div class="topstrip"><div class="wrap">
-      <span>${esc(C.addressLines.join(", "))}</span>
+      <span>${esc(C.addressShort || C.addressLines.join(", "))}</span>
       <span>${C.phones.map((p) => `<a href="tel:${p.dial}">${esc(p.display)}</a>`).join(" · ")}<span class="ts-mail"> · <a href="mailto:${C.email}">${esc(C.email)}</a></span></span>
     </div></div>
     <header class="site-header" id="top-header"><div class="wrap">
@@ -65,10 +65,10 @@
   if (footer) {
     footer.outerHTML = `
     <footer class="site-footer"><div class="wrap">
-      <div><img src="img/sr-logo-white.svg" alt="SR Training Center" width="150" height="44"><p style="margin-top:14px;max-width:34ch">Trade testing and hands-on skill training for overseas jobs, at our workshop in Mambakkam, Chennai.</p></div>
+      <div><img src="img/sr-logo-white.svg" alt="SR Training Center" width="150" height="44"><p style="margin-top:14px;max-width:34ch">Trade testing and hands-on skill training for overseas jobs, at our workshop in Sonallur, Chennai.</p></div>
       <div><h4>Visit</h4><p>${C.addressLines.map(esc).join("<br>")}</p><p style="margin-top:8px">${txt(C.hours)}</p></div>
       <div><h4>Links</h4>${navItems.map(([l, h]) => `<a href="${h}">${l}</a>`).join("")}</div>
-      <p class="legal">© <span id="yr"></span> SR Training Center · Registered partnership firm No. 1512 of 2015, Chennai (South).</p>
+      <p class="legal">© <span id="yr"></span> SR Training Center · Registered partnership firm No. 1512 of 2015, Chennai (South) · GSTIN ${esc(C.gstin)}</p>
     </div></footer>`;
     $("#yr").textContent = new Date().getFullYear();
   }
