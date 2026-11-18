@@ -15,12 +15,14 @@ window.SR = {
     // Numbers shown on the site (from Arun, 17 Nov 2026). The first one is the main number:
     // the floating Call button and error notes use it.
     phones: [
-      { name: "Rajendran B", role: "Manager", display: "+91 98849 34330", dial: "+919884934330" },
-      { name: "A. Ramanan",  role: "Owner",   display: "+91 97891 04330", dial: "+919789104330" }
+      { name: "A. Ramanan",  role: "Founder & Managing Partner", display: "+91 97891 04330", dial: "+919789104330" },   // calls go here (Arun, 18 Nov 2026)
+      { name: "Rajendran B", role: "Managing Partner",           display: "+91 98849 34330", dial: "+919884934330" }
     ],
     whatsapp: "919884934330",            // Rajendran's number: all WhatsApp buttons open a chat here
+    whatsappDisplay: "+91 98849 34330",
+    whatsappName: "Rajendran B",
     email: "srtrainingcenter@gmail.com",
-    hours: "Monday to Saturday, 8:00 am to 7:00 pm",   // hours from SR 16 Nov 2026; days set by Arun 17 Nov 2026
+    hours: "Monday to Saturday, 7:00 am to 7:00 pm",   // from Arun, 18 Nov 2026
     mapsLink: "https://www.google.com/maps/search/?api=1&query=Polachery+Main+Road+Sonallur+Chennai+600127",
     mapsEmbed: "https://www.google.com/maps?q=Polachery+Main+Road,+Sonallur,+Chennai+600127&output=embed"
   },
@@ -99,9 +101,9 @@ window.SR = {
   /* ---------- People and registration ---------- */
   /* People shown on the home page (no photos: initials badges only) */
   people: [
-    { name: "A. Ramanan", role: "Owner",   // title to confirm (Owner / Founder / Managing Partner); name as on the MEA licence
+    { name: "A. Ramanan", role: "Founder & Managing Partner",   // title from Arun, 18 Nov 2026; name as on the MEA licence
       message: "At SR Training Center, every candidate practises on full-size bays built like the sites they will work on abroad. Our trainers check each skill hands-on before anyone is put forward for a trade test, so employers receive workers who are ready to start, not just ready to pass. We keep onboarding clean and simple: clear information, documents checked at each step, and steady guidance for candidates and their families from registration to departure." },
-    { name: "Rajendran B", role: "Manager",
+    { name: "Rajendran B", role: "Managing Partner",
       message: "Every day at the center, we make sure the bays are ready, the trainers are on the floor and every batch is tested properly. Candidates and agencies are welcome to visit the workshop and see the training for themselves." }
   ],
   registration: [

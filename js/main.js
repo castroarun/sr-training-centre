@@ -245,7 +245,7 @@
     <h3 style="font-size:1.7rem;font-weight:800;text-transform:uppercase">Visit or call</h3>
     <div><div class="k">Address</div><div class="v">${C.addressLines.map(esc).join("<br>")}</div></div>
     <div><div class="k">Phone</div><div class="v">${C.phones.map((p) => `<a href="tel:${p.dial}">${esc(p.display)}</a> <span class="ph-who">${esc(p.name)}, ${esc(p.role)}</span>`).join("<br>")}</div></div>
-    <div><div class="k">WhatsApp</div><div class="v"><a href="#" data-wa="default">${esc(C.phones[0].display)}</a> <span class="ph-who">${esc(C.phones[0].name)}</span></div></div>
+    <div><div class="k">WhatsApp</div><div class="v"><a href="#" data-wa="default">${esc(C.whatsappDisplay)}</a> <span class="ph-who">${esc(C.whatsappName)}</span></div></div>
     <div><div class="k">Email</div><div class="v"><a href="mailto:${C.email}">${esc(C.email)}</a></div></div>
     <div><div class="k">Hours</div><div class="v">${txt(C.hours)}</div></div>
     <div class="row"><a class="btn btn-red" href="#" data-wa="default">${ICON.wa} WhatsApp us</a><button class="btn btn-line" type="button" data-mail="">${ICON.mail} Email us</button><a class="btn btn-line" href="${C.mapsLink}" target="_blank" rel="noopener">Directions <span class="arrow">→</span></a></div>`);

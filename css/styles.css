@@ -471,3 +471,6 @@ p{margin:0}
 .topstrip .wrap > span:last-child{flex:none}
 @media (max-width:600px){.topstrip .ts-addr{flex-basis:100%}}
 @media (prefers-reduced-motion:reduce){.topstrip .ts-addr{white-space:normal}}
+
+/* name and title under each number in the contact box (18 Nov 2026) */
+#contact-card .ph-who{display:block;margin:-2px 0 8px;font-size:.82em}
