@@ -15,12 +15,12 @@ window.SR = {
     // Numbers shown on the site (from Arun, 17 Nov 2026). The first one is the main number:
     // the floating Call button and error notes use it.
     phones: [
-      { name: "A. Ramanan",  role: "Founder & Managing Partner", display: "+91 97891 04330", dial: "+919789104330" },   // calls go here (Arun, 18 Nov 2026)
-      { name: "Rajendran B", role: "Managing Partner",           display: "+91 98849 34330", dial: "+919884934330" }
+      { name: "Rajendran B", role: "Managing Partner",           display: "+91 98849 34330", dial: "+919884934330" },   // calls go here (Arun, 18 Nov 2026, 1:37 pm)
+      { name: "A. Ramanan",  role: "Founder & Managing Partner", display: "+91 97891 04330", dial: "+919789104330" }
     ],
-    whatsapp: "919884934330",            // Rajendran's number: all WhatsApp buttons open a chat here
-    whatsappDisplay: "+91 98849 34330",
-    whatsappName: "Rajendran B",
+    whatsapp: "919789104330",            // Ramanan's number: all WhatsApp buttons open a chat here (Arun, 18 Nov 2026)
+    whatsappDisplay: "+91 97891 04330",
+    whatsappName: "A. Ramanan",
     email: "srtrainingcenter@gmail.com",
     hours: "Monday to Saturday, 7:00 am to 7:00 pm",   // from Arun, 18 Nov 2026
     mapsLink: "https://www.google.com/maps/search/?api=1&query=Polachery+Main+Road+Sonallur+Chennai+600127",
@@ -41,7 +41,7 @@ window.SR = {
   /* ---------- Key facts (only true numbers; brackets = to confirm) ---------- */
   facts: [   // from SR, 16 Nov 2026
     { value: "2014", count: 2014, from: 1990, label: "Training candidates since" },
-    { value: "150",  count: 150,  from: 0,    label: "Candidates trained every month" },
+    { value: "50+",  count: 50,   from: 0, suffix: "+", label: "Candidates trained every month" },   // "more than 50", Arun 18 Nov 2026
     { value: "10",   count: 10,   from: 0,    label: "Trades with full-size practice bays" },
     { value: "3",    count: 3,    from: 0,    label: "Regions: Singapore, Malaysia and the Middle East" }
   ],
@@ -142,7 +142,7 @@ window.SR = {
     reasons: [
       { title: "Trained on our own bays", text: "Workers practise and are trade-tested at our Sonallur workshop before they are put forward." },
       { title: "Documents handled", text: "Offer letters, visa and emigration paperwork are followed through for you." },
-      { title: "Steady supply", text: "We train about 150 candidates every month, so we can put forward trained workers on a regular basis." }
+      { title: "Steady supply", text: "We train more than 50 candidates every month, so we can put forward trained workers on a regular basis." }
     ],
     steps: [
       { title: "Send your requirement", text: "Trades, numbers, country and start date." },

@@ -161,7 +161,7 @@
 
   fill("facts", SR.facts.map((f) => `
     <div class="fact rv" style="--d:${0}s">
-      <div class="num ${f.todo ? "todo-num" : ""}" ${f.count ? `data-count="${f.count}" data-from="${f.from || 0}"` : ""}>${esc(f.value)}</div>
+      <div class="num ${f.todo ? "todo-num" : ""}" ${f.count ? `data-count="${f.count}" data-from="${f.from || 0}" data-suffix="${esc(f.suffix || "")}"` : ""}>${esc(f.value)}</div>
       <div class="rule draw"></div>
       <p>${esc(f.label)} ${f.todo ? '<span class="todo">to confirm</span>' : ""}</p>
     </div>`).join(""));
@@ -340,8 +340,8 @@
   const countUp = (el) => {
     const to = +el.dataset.count, from = +el.dataset.from, t0 = performance.now(), dur = 1400;
     const step = (t) => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(from + (to - from) * e); if (p < 1) requestAnimationFrame(step); };
-    if (reduce) el.textContent = to; else requestAnimationFrame(step);
+      el.textContent = Math.round(from + (to - from) * e) + (el.dataset.suffix || ""); if (p < 1) requestAnimationFrame(step); };
+    if (reduce) el.textContent = to + (el.dataset.suffix || ""); else requestAnimationFrame(step);
   };
   const io = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
     entries.forEach((en) => {
