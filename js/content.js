@@ -23,8 +23,8 @@ window.SR = {
     whatsappName: "A. Ramanan",
     email: "srtrainingcenter@gmail.com",
     hours: "Monday to Saturday, 7:00 am to 7:00 pm",   // from Arun, 18 Nov 2026
-    mapsLink: "https://www.google.com/maps/search/?api=1&query=Polachery+Main+Road+Sonallur+Chennai+600127",
-    mapsEmbed: "https://www.google.com/maps?q=Polachery+Main+Road,+Sonallur,+Chennai+600127&output=embed"
+    mapsLink: "https://www.google.com/maps/search/?api=1&query=12.840047%2C80.177766",   // plot SF.No. 47/1C, Sonallur (TN land map centroid, 20 Nov 2026)
+    mapsEmbed: "https://www.google.com/maps?q=12.840047,80.177766&z=17&output=embed"
   },
 
   /* ---------- Ready-typed WhatsApp messages (wording to confirm with SR) ---------- */
